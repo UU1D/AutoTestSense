@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated reproduction outputs. Keep the directory itself.
+work/*
+!work/.gitkeep
+tests/
