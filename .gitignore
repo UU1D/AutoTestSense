@@ -4,11 +4,10 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 
-# Generated reproduction outputs. Keep the directory itself.
 work/*
 !work/.gitkeep
 
-# Extracted release artifacts. Commit the ZIP files under artifacts/ instead.
 /data/
 /rqs/rq2/data/
 /rqs/rq4/data/
+/tests/

@@ -20,7 +20,6 @@ from dotenv import load_dotenv
 
 
 ROOT = Path(__file__).resolve().parent
-DEFAULT_CONFIG = ROOT / "config" / "reproduction.json"
 WORK = ROOT / "work"
 DATA = ROOT / "data"
 PROMPTS = ROOT / "prompts"
@@ -38,6 +37,63 @@ MODEL_ENV_KEYS = (
     "RERANK_MODEL",
     "DEEPSEEK_V4_FLASH",
 )
+
+REPRODUCTION_CONFIG: dict[str, Any] = {
+    "schema_version": "1.0",
+    "expected": {
+        "manifest_ids": 4634,
+        "manifest_unique_urls": 4594,
+        "instance_level_commonsense": 3708,
+        "final_generalization_records": 1399,
+        "final_covered_instance_level_commonsense": 3708,
+        "embedding_dimensions": 1024,
+        "prompt_files": 13,
+        "reference_sha256": {
+            "final_commonsense_generalization_records.json": (
+                "5079fe3129d8581eb1deaa7a49923c799d183e16233fca238d17b76bd1503c7a"
+            ),
+            "generalized_rule_situation_embeddings.jsonl": (
+                "733b9607a9c96067ba3f8cd474e30fc720cab85ece011f2c32b6bf8799b094f5"
+            ),
+            "commonsense_library_situation_embeddings.jsonl": (
+                "ff2bd074d60dac8509bbca9d2f2b25138ef5752ec7ebf63d5d43bde7507c0251"
+            ),
+        },
+    },
+    "stage2": {
+        "embedding_fields": ["violated_commonsense_rule", "situation"],
+        "embedding_batch_size": 10,
+        "recall_k": 60,
+        "rerank_k": 30,
+        "min_shared_neighbors": 15,
+        "mutual_only": False,
+        "louvain_resolution": 0.8,
+        "max_community_size": 25,
+        "leiden_resolution": 1.0,
+        "random_seed": 42,
+    },
+    "stage4": {
+        "recall_k": 20,
+        "rerank_k": 10,
+        "situation_weight": 0.35,
+        "rule_weight": 0.65,
+        "graph_top_k": 3,
+        "graph_min_score": 0.7,
+        "mutual_only": True,
+    },
+    "stage5": {
+        "recall_k": 20,
+        "rerank_k": 10,
+        "min_rerank_score": 0.7,
+        "min_candidates": 3,
+        "reuse_initial_no_match": False,
+    },
+    "stage7": {
+        "recall_k": 60,
+        "rerank_k": 40,
+        "enrich_top_k": 30,
+    },
+}
 
 STAGE_NAMES = {
     1: "Instance-Level Commonsense Extraction",
@@ -65,20 +121,19 @@ def path_text(path: Path) -> str:
     return str(path.resolve())
 
 
-def load_config(path: Path) -> dict[str, Any]:
-    with path.open("r", encoding="utf-8") as file:
-        value = json.load(file)
-    if not isinstance(value, dict):
-        raise ValueError(f"Config root must be an object: {path}")
-    return value
-
-
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as file:
         for chunk in iter(lambda: file.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def configuration_sha256(config: dict[str, Any]) -> str:
+    content = json.dumps(
+        config, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    ).encode("utf-8")
+    return hashlib.sha256(content).hexdigest()
 
 
 def command_input_files(arguments: list[str]) -> list[Path]:
@@ -272,6 +327,7 @@ def stage2_steps(args: argparse.Namespace, config: dict[str, Any]) -> list[Step]
     snn = root / "snn"
     refined = root / "refined"
     overwrite = ["--overwrite"] if args.overwrite else []
+    mutual_option = ["--mutual-only" if cfg["mutual_only"] else "--no-mutual-only"]
     steps.extend(
         [
             module_step(
@@ -300,7 +356,7 @@ def stage2_steps(args: argparse.Namespace, config: dict[str, Any]) -> list[Step]
                 *list_option("--metadata-files", units),
                 "--output-dir", path_text(snn),
                 "--min-shared-neighbors", cfg["min_shared_neighbors"],
-                "--no-mutual-only",
+                *mutual_option,
                 "--resolution", cfg["louvain_resolution"],
                 "--random-seed", cfg["random_seed"],
                 *overwrite,
@@ -363,6 +419,7 @@ def stage4_steps(args: argparse.Namespace, config: dict[str, Any]) -> list[Step]
     catalog_assembly = root / "catalog_assembly"
     units = source_unit_files()
     overwrite = ["--overwrite"] if args.overwrite else []
+    mutual_option = [] if cfg["mutual_only"] else ["--non-mutual"]
     steps = [
         module_step(
             "embed local generalized commonsense rules",
@@ -399,6 +456,7 @@ def stage4_steps(args: argparse.Namespace, config: dict[str, Any]) -> list[Step]
             "--output-dir", path_text(graph),
             "--top-k", cfg["graph_top_k"],
             "--min-score", cfg["graph_min_score"],
+            *mutual_option,
         ),
         module_step(
             "group global generalization candidates",
@@ -448,6 +506,11 @@ def stage5_steps(args: argparse.Namespace, config: dict[str, Any]) -> list[Step]
     generalization_index = root / "initial_generalization_index"
     result = root / "serial_consolidation"
     overwrite = ["--overwrite"] if args.overwrite else []
+    reuse_option = [
+        "--reuse-initial-no-match"
+        if cfg["reuse_initial_no_match"]
+        else "--no-reuse-initial-no-match"
+    ]
     return [
         module_step(
             "prepare unassigned instance-level commonsense",
@@ -481,7 +544,7 @@ def stage5_steps(args: argparse.Namespace, config: dict[str, Any]) -> list[Step]
             "--final-k", cfg["rerank_k"],
             "--min-rerank-score", cfg["min_rerank_score"],
             "--min-candidates", cfg["min_candidates"],
-            "--no-reuse-initial-no-match",
+            *reuse_option,
             *common_suffix(args),
         ),
     ]
@@ -616,7 +679,12 @@ STAGE_BUILDERS = {
 }
 
 
-def run_steps(stage: int, steps: list[Step], args: argparse.Namespace, config_path: Path) -> None:
+def run_steps(
+    stage: int,
+    steps: list[Step],
+    args: argparse.Namespace,
+    config: dict[str, Any],
+) -> None:
     started = datetime.now(timezone.utc)
     records: list[dict[str, Any]] = []
     environment = os.environ.copy()
@@ -676,8 +744,8 @@ def run_steps(stage: int, steps: list[Step], args: argparse.Namespace, config_pa
                 "started_at": started.isoformat(),
                 "ended_at": ended.isoformat(),
                 "elapsed_seconds": round((ended - started).total_seconds(), 3),
-                "config_file": str(config_path),
-                "config_sha256": sha256_file(config_path),
+                "reproduction_configuration": config,
+                "configuration_sha256": configuration_sha256(config),
                 "parameters": {
                     "limit": args.limit,
                     "workers": args.workers,
@@ -765,7 +833,6 @@ def doctor(config: dict[str, Any]) -> int:
 
 
 def add_common_arguments(parser: argparse.ArgumentParser) -> None:
-    parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--workers", type=int, default=5)
     parser.add_argument("--dry-run", action="store_true")
@@ -776,7 +843,6 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     subparsers = parser.add_subparsers(dest="command", required=True)
     doctor_parser = subparsers.add_parser("doctor", help="Validate package and reference data.")
-    doctor_parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     for stage in range(1, 7):
         stage_parser = subparsers.add_parser(
             f"stage{stage}", help=STAGE_NAMES[stage]
@@ -798,8 +864,7 @@ def build_parser() -> argparse.ArgumentParser:
 def main() -> None:
     parser = build_parser()
     args = parser.parse_args()
-    config_path = args.config.resolve()
-    config = load_config(config_path)
+    config = REPRODUCTION_CONFIG
     if args.command == "doctor":
         raise SystemExit(doctor(config))
     if args.limit is not None and args.limit < 1:
@@ -815,7 +880,7 @@ def main() -> None:
         stages = [int(args.command.removeprefix("stage"))]
     for stage in stages:
         steps = STAGE_BUILDERS[stage](args, config)
-        run_steps(stage, steps, args, config_path)
+        run_steps(stage, steps, args, config)
 
 
 if __name__ == "__main__":

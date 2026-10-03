@@ -61,7 +61,7 @@ Packaged data is stored in three ZIP archives under
 ## Restore Packaged Data
 
 After cloning the repository, run the following command from `package/` before
-`doctor`, tests, or reproduction commands:
+`doctor` or reproduction commands:
 
 ```bash
 python extract_artifacts.py
@@ -126,7 +126,6 @@ the package:
 
 ```bash
 python reproduce.py doctor
-python -m pytest -q
 ```
 
 `doctor` checks Python, dependencies, prompts, reference counts, member
@@ -140,12 +139,9 @@ No cloud call is required:
 
 ```bash
 python reproduce.py doctor
-python -m pytest -q
 ```
 
-Start with the final library file linked in the artifact table above. The
-official parameters and expected counts are in
-[`config/reproduction.json`](config/reproduction.json).
+Start with the final library file linked in the artifact table above.
 
 ### 2. Rebuild from the extracted commonsense checkpoint
 
@@ -213,10 +209,6 @@ precomputed evaluation metrics.
 
 ## Pipeline Details
 
-The defaults below come from
-[`config/reproduction.json`](config/reproduction.json). Change that file through
-`--config` rather than editing individual scripts.
-
 ### Stage 1: extraction
 
 Each fixed issue is fetched once per unique URL. The extraction prompt produces
@@ -281,7 +273,6 @@ Common options:
 - `--workers N`: set concurrency where the stage supports it.
 - `--dry-run`: resolve and print stage commands without calling APIs.
 - `--overwrite`: replace completed outputs instead of resuming.
-- `--config PATH`: use another configuration file.
 
 All generated artifacts are written to `work/`. Each executed stage writes a
 manifest under `work/run_manifests/` containing arguments, model identifiers,
@@ -293,7 +284,8 @@ input hashes, elapsed time, output summaries, and API usage. Files under
 ```text
 package/
 |-- reproduce.py                         unified seven-stage entry point
-|-- config/                              parameters and expected counts
+|-- extract_artifacts.py                 packaged-data extraction
+|-- artifacts/                           packaged data archives
 |-- prompts/                             versioned prompts and prompt index
 |-- commonsense_repro/
 |   |-- extraction/                      Stage 1
@@ -305,7 +297,6 @@ package/
 |   `-- common/                          shared I/O and API utilities
 |-- data/                                fixed inputs, checkpoints, references
 |-- rqs/                                 paper experiment artifacts
-|-- tests/                               offline integrity and algorithm tests
 `-- work/                                generated outputs, logs, and manifests
 ```
 
