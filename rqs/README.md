@@ -14,6 +14,3 @@ RQ2 uses the generalized commonsense library. RQ4 changes only the knowledge
 representation used for retrieval and injection: it retrieves directly from
 the 3,708 extracted instance-level items. The two experiment modules share
 retrieval and detector utilities but keep their inputs and outputs separate.
-
-The bundled detector JSON files are raw parsed model outputs. They do not encode
-ground-truth labels or final Precision, Recall, or F1 measurements.
