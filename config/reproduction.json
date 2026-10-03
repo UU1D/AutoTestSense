@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "expected": {
+    "manifest_ids": 4634,
+    "manifest_unique_urls": 4594,
+    "instance_level_commonsense": 3708,
+    "final_generalization_records": 1399,
+    "final_covered_instance_level_commonsense": 3708,
+    "embedding_dimensions": 1024,
+    "prompt_files": 13,
+    "reference_sha256": {
+      "final_commonsense_generalization_records.json": "5079fe3129d8581eb1deaa7a49923c799d183e16233fca238d17b76bd1503c7a",
+      "generalized_rule_situation_embeddings.jsonl": "733b9607a9c96067ba3f8cd474e30fc720cab85ece011f2c32b6bf8799b094f5",
+      "commonsense_library_situation_embeddings.jsonl": "ff2bd074d60dac8509bbca9d2f2b25138ef5752ec7ebf63d5d43bde7507c0251"
+    }
+  },
+  "stage2": {
+    "embedding_fields": ["violated_commonsense_rule", "situation"],
+    "embedding_batch_size": 10,
+    "recall_k": 60,
+    "rerank_k": 30,
+    "min_shared_neighbors": 15,
+    "mutual_only": false,
+    "louvain_resolution": 0.8,
+    "max_community_size": 25,
+    "leiden_resolution": 1.0,
+    "random_seed": 42
+  },
+  "stage4": {
+    "recall_k": 20,
+    "rerank_k": 10,
+    "situation_weight": 0.35,
+    "rule_weight": 0.65,
+    "graph_top_k": 3,
+    "graph_min_score": 0.7,
+    "mutual_only": true
+  },
+  "stage5": {
+    "recall_k": 20,
+    "rerank_k": 10,
+    "min_rerank_score": 0.7,
+    "min_candidates": 3,
+    "reuse_initial_no_match": false
+  },
+  "stage7": {
+    "recall_k": 60,
+    "rerank_k": 40,
+    "enrich_top_k": 30
+  }
+}

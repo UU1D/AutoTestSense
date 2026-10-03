@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "rq_id": "RQ2",
+  "research_question": "How does generalized commonsense injection affect GUI bug detection?",
+  "task": "bug_detection_with_generalized_commonsense",
+  "retrieval_mode": "library",
+  "runner": "rqs/rq2/run.py",
+  "case_count": 151,
+  "evaluation_status": "not_included",
+  "historical_situation_extraction_model": "not_recorded",
+  "models": {
+    "qwen": {"paper_name": "qwen3.7-plus", "api_model_identifier": "qwen3.7-plus"},
+    "gemini": {"paper_name": "gemini-3.1-pro-preview", "api_model_identifier": "gemini-3.1-pro-preview-medium"}
+  },
+  "baselines": {
+    "visiondroid": {"situation_track": "sequence_context", "stages": ["function_generation", "bug_detection"]},
+    "vanilla_mllm": {"situation_track": "image_only", "stages": ["image_only_bug_detection"]},
+    "kuitest": {
+      "situation_track": "sequence_context",
+      "without_commonsense_variant": "bug_with_page_descriptions",
+      "with_commonsense_variant": "bug_with_commonsense",
+      "stages": ["function_identification", "response_verification"]
+    }
+  },
+  "conditions": ["without_commonsense", "with_commonsense"],
+  "experiment_count": 12,
+  "retrieval": {
+    "aggregation": "max(base_score, variant_scores)",
+    "cosine_recall_k": 60,
+    "rerank_k": 40,
+    "stored_enriched_k": 30,
+    "detector_injection_k": 10
+  },
+  "implementation": [
+    "rqs/rq2/code/situation_extraction/run_situations.py",
+    "rqs/rq2/code/situation_extraction/image_only/run_situations.py",
+    "rqs/rq2/code/baselines/visiondroid/run.py",
+    "rqs/rq2/code/baselines/vanilla_mllm/run.py",
+    "rqs/rq2/code/baselines/kuitest/run.py",
+    "commonsense_repro/retrieval/batch_retrieve_commonsense_library.py",
+    "commonsense_repro/retrieval/enrich_retrieved_commonsense_library.py"
+  ],
+  "inputs": {
+    "case_manifest": "rqs/rq2/data/case_manifest.jsonl",
+    "generalization_records": "data/reference/commonsense_library/final_commonsense_generalization_records.json",
+    "situation_embeddings": "data/reference/commonsense_library/commonsense_library_situation_embeddings.jsonl",
+    "situation_tracks": {
+      "sequence_context": "rqs/rq2/data/situations/sequence_context",
+      "image_only": "rqs/rq2/data/situations/image_only"
+    }
+  },
+  "historical_outputs": "rqs/rq2/data/detector_outputs",
+  "historical_output_manifest": "rqs/rq2/data/detector_output_manifest.json",
+  "new_output_root": "work/rq2/<model>/<baseline>/<condition>"
+}

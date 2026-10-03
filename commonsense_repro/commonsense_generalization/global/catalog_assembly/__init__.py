@@ -1,0 +1,3 @@
+﻿"""Deterministic global catalog assembly."""
+
+

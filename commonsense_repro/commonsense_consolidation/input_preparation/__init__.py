@@ -1,0 +1,3 @@
+"""Serial-consolidation input preparation."""
+
+

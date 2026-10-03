@@ -1,0 +1,2689 @@
+{
+    "schema_version":  "1.0",
+    "rq_id":  "RQ1",
+    "artifact_role":  "sample_metadata_index",
+    "path_base":  "package_root",
+    "sample":  {
+                   "sampling_method":  "simple_random_sample_without_replacement",
+                   "random_seed":  20260920,
+                   "population_generalization_record_count":  1399,
+                   "sampled_generalization_record_count":  302,
+                   "sampled_instance_level_commonsense_count":  848
+               },
+    "data_locations":  {
+                           "generalization_records":  "data/reference/commonsense_library/final_commonsense_generalization_records.json",
+                           "instance_level_commonsense":  [
+                                                              "data/checkpoints/instance_level_commonsense/gemini_v1_2_extract.json",
+                                                              "data/checkpoints/instance_level_commonsense/gemini_v1_2_github.json",
+                                                              "data/checkpoints/instance_level_commonsense/gemini_v1_2_negative.json"
+                                                          ],
+                           "issue_manifest":  "data/input/issue_manifest.jsonl"
+                       },
+    "lookup_keys":  {
+                        "generalization_record":  "family_id",
+                        "instance_level_commonsense":  "id",
+                        "issue_report":  "id"
+                    },
+    "sampled_records":  [
+                            {
+                                "sample_index":  1,
+                                "family_id":  "NM0857",
+                                "member_ids":  [
+                                                   "N001311"
+                                               ]
+                            },
+                            {
+                                "sample_index":  2,
+                                "family_id":  "NM0991",
+                                "member_ids":  [
+                                                   "N001758"
+                                               ]
+                            },
+                            {
+                                "sample_index":  3,
+                                "family_id":  "NM0088",
+                                "member_ids":  [
+                                                   "G000369"
+                                               ]
+                            },
+                            {
+                                "sample_index":  4,
+                                "family_id":  "0.2.F2",
+                                "member_ids":  [
+                                                   "G000380",
+                                                   "G000383"
+                                               ]
+                            },
+                            {
+                                "sample_index":  5,
+                                "family_id":  "NM0510",
+                                "member_ids":  [
+                                                   "N000128"
+                                               ]
+                            },
+                            {
+                                "sample_index":  6,
+                                "family_id":  "NM0404",
+                                "member_ids":  [
+                                                   "G001700"
+                                               ]
+                            },
+                            {
+                                "sample_index":  7,
+                                "family_id":  "NM0235",
+                                "member_ids":  [
+                                                   "G001000",
+                                                   "N000462"
+                                               ]
+                            },
+                            {
+                                "sample_index":  8,
+                                "family_id":  "NM0007",
+                                "member_ids":  [
+                                                   "G000023"
+                                               ]
+                            },
+                            {
+                                "sample_index":  9,
+                                "family_id":  "NM0479",
+                                "member_ids":  [
+                                                   "N000036"
+                                               ]
+                            },
+                            {
+                                "sample_index":  10,
+                                "family_id":  "NM0236",
+                                "member_ids":  [
+                                                   "G001003"
+                                               ]
+                            },
+                            {
+                                "sample_index":  11,
+                                "family_id":  "C0003.G03.F3",
+                                "member_ids":  [
+                                                   "G000530",
+                                                   "G000633",
+                                                   "G000712",
+                                                   "G000781",
+                                                   "G000843",
+                                                   "G001361",
+                                                   "G001833",
+                                                   "V000352",
+                                                   "V000354",
+                                                   "V000355",
+                                                   "V000357",
+                                                   "V000358",
+                                                   "V000362",
+                                                   "V000364",
+                                                   "V000367",
+                                                   "V000373",
+                                                   "V000376",
+                                                   "V000472",
+                                                   "V000843"
+                                               ]
+                            },
+                            {
+                                "sample_index":  12,
+                                "family_id":  "0.1.F4",
+                                "member_ids":  [
+                                                   "G001849",
+                                                   "N001089",
+                                                   "N001668"
+                                               ]
+                            },
+                            {
+                                "sample_index":  13,
+                                "family_id":  "NM0113",
+                                "member_ids":  [
+                                                   "G000475"
+                                               ]
+                            },
+                            {
+                                "sample_index":  14,
+                                "family_id":  "NM0651",
+                                "member_ids":  [
+                                                   "N000590"
+                                               ]
+                            },
+                            {
+                                "sample_index":  15,
+                                "family_id":  "NM0552",
+                                "member_ids":  [
+                                                   "N000273"
+                                               ]
+                            },
+                            {
+                                "sample_index":  16,
+                                "family_id":  "NM0362",
+                                "member_ids":  [
+                                                   "G001545"
+                                               ]
+                            },
+                            {
+                                "sample_index":  17,
+                                "family_id":  "0.0.F3",
+                                "member_ids":  [
+                                                   "G001314",
+                                                   "N000046",
+                                                   "N000464",
+                                                   "N001716"
+                                               ]
+                            },
+                            {
+                                "sample_index":  18,
+                                "family_id":  "C0023.G02.F1",
+                                "member_ids":  [
+                                                   "G000558",
+                                                   "G000814",
+                                                   "G001280",
+                                                   "G001306",
+                                                   "G001435",
+                                                   "G001780",
+                                                   "N000588",
+                                                   "V000096",
+                                                   "V000111",
+                                                   "V000253",
+                                                   "V000372",
+                                                   "V000615",
+                                                   "V000824"
+                                               ]
+                            },
+                            {
+                                "sample_index":  19,
+                                "family_id":  "17.0.F2",
+                                "member_ids":  [
+                                                   "G001669",
+                                                   "N000502",
+                                                   "N001448",
+                                                   "V000657"
+                                               ]
+                            },
+                            {
+                                "sample_index":  20,
+                                "family_id":  "NM0027",
+                                "member_ids":  [
+                                                   "G000111",
+                                                   "G000116",
+                                                   "G001444"
+                                               ]
+                            },
+                            {
+                                "sample_index":  21,
+                                "family_id":  "NM0456",
+                                "member_ids":  [
+                                                   "G001884"
+                                               ]
+                            },
+                            {
+                                "sample_index":  22,
+                                "family_id":  "16.0.F1",
+                                "member_ids":  [
+                                                   "G000531",
+                                                   "N000542",
+                                                   "N000757"
+                                               ]
+                            },
+                            {
+                                "sample_index":  23,
+                                "family_id":  "NM0320",
+                                "member_ids":  [
+                                                   "G001390"
+                                               ]
+                            },
+                            {
+                                "sample_index":  24,
+                                "family_id":  "NM0606",
+                                "member_ids":  [
+                                                   "N000447"
+                                               ]
+                            },
+                            {
+                                "sample_index":  25,
+                                "family_id":  "NM0568",
+                                "member_ids":  [
+                                                   "N000321"
+                                               ]
+                            },
+                            {
+                                "sample_index":  26,
+                                "family_id":  "NM0785",
+                                "member_ids":  [
+                                                   "N001040"
+                                               ]
+                            },
+                            {
+                                "sample_index":  27,
+                                "family_id":  "42.0.F1",
+                                "member_ids":  [
+                                                   "N000466",
+                                                   "N000587",
+                                                   "N001241"
+                                               ]
+                            },
+                            {
+                                "sample_index":  28,
+                                "family_id":  "NM0181",
+                                "member_ids":  [
+                                                   "G000797"
+                                               ]
+                            },
+                            {
+                                "sample_index":  29,
+                                "family_id":  "NM1073",
+                                "member_ids":  [
+                                                   "V000541"
+                                               ]
+                            },
+                            {
+                                "sample_index":  30,
+                                "family_id":  "NM0685",
+                                "member_ids":  [
+                                                   "N000708"
+                                               ]
+                            },
+                            {
+                                "sample_index":  31,
+                                "family_id":  "NM0622",
+                                "member_ids":  [
+                                                   "N000507",
+                                                   "N001272",
+                                                   "V000063"
+                                               ]
+                            },
+                            {
+                                "sample_index":  32,
+                                "family_id":  "NM0262",
+                                "member_ids":  [
+                                                   "G001130"
+                                               ]
+                            },
+                            {
+                                "sample_index":  33,
+                                "family_id":  "NM0544",
+                                "member_ids":  [
+                                                   "N000235"
+                                               ]
+                            },
+                            {
+                                "sample_index":  34,
+                                "family_id":  "68.0.F1",
+                                "member_ids":  [
+                                                   "G000295",
+                                                   "N001329"
+                                               ]
+                            },
+                            {
+                                "sample_index":  35,
+                                "family_id":  "NM0749",
+                                "member_ids":  [
+                                                   "N000917"
+                                               ]
+                            },
+                            {
+                                "sample_index":  36,
+                                "family_id":  "NM0428",
+                                "member_ids":  [
+                                                   "G001754"
+                                               ]
+                            },
+                            {
+                                "sample_index":  37,
+                                "family_id":  "NM0954",
+                                "member_ids":  [
+                                                   "N001675"
+                                               ]
+                            },
+                            {
+                                "sample_index":  38,
+                                "family_id":  "36.0.F2",
+                                "member_ids":  [
+                                                   "G000595",
+                                                   "N001776",
+                                                   "V000212",
+                                                   "V000219"
+                                               ]
+                            },
+                            {
+                                "sample_index":  39,
+                                "family_id":  "C0007.G01.F2",
+                                "member_ids":  [
+                                                   "G000784",
+                                                   "G001458",
+                                                   "G001460",
+                                                   "G001466",
+                                                   "G001522",
+                                                   "N000194",
+                                                   "V000535",
+                                                   "V000537",
+                                                   "V000538",
+                                                   "V000540",
+                                                   "V000600",
+                                                   "V000601",
+                                                   "V000602",
+                                                   "V000604",
+                                                   "V000738"
+                                               ]
+                            },
+                            {
+                                "sample_index":  40,
+                                "family_id":  "4.3.F1",
+                                "member_ids":  [
+                                                   "G000875",
+                                                   "G001281",
+                                                   "V000094",
+                                                   "V000099",
+                                                   "V000125",
+                                                   "V000146"
+                                               ]
+                            },
+                            {
+                                "sample_index":  41,
+                                "family_id":  "NM0265",
+                                "member_ids":  [
+                                                   "G001155",
+                                                   "G001516",
+                                                   "N000180",
+                                                   "N000521"
+                                               ]
+                            },
+                            {
+                                "sample_index":  42,
+                                "family_id":  "NM0490",
+                                "member_ids":  [
+                                                   "N000072"
+                                               ]
+                            },
+                            {
+                                "sample_index":  43,
+                                "family_id":  "NM0795",
+                                "member_ids":  [
+                                                   "N001071"
+                                               ]
+                            },
+                            {
+                                "sample_index":  44,
+                                "family_id":  "NM1149",
+                                "member_ids":  [
+                                                   "V000933"
+                                               ]
+                            },
+                            {
+                                "sample_index":  45,
+                                "family_id":  "NM0707",
+                                "member_ids":  [
+                                                   "N000765"
+                                               ]
+                            },
+                            {
+                                "sample_index":  46,
+                                "family_id":  "NM0912",
+                                "member_ids":  [
+                                                   "N001484"
+                                               ]
+                            },
+                            {
+                                "sample_index":  47,
+                                "family_id":  "C0029.G02.F1",
+                                "member_ids":  [
+                                                   "G000987",
+                                                   "N000218",
+                                                   "N000326",
+                                                   "N000527",
+                                                   "N000549",
+                                                   "N000900"
+                                               ]
+                            },
+                            {
+                                "sample_index":  48,
+                                "family_id":  "NM1139",
+                                "member_ids":  [
+                                                   "V000893"
+                                               ]
+                            },
+                            {
+                                "sample_index":  49,
+                                "family_id":  "NM0150",
+                                "member_ids":  [
+                                                   "G000677"
+                                               ]
+                            },
+                            {
+                                "sample_index":  50,
+                                "family_id":  "NM0063",
+                                "member_ids":  [
+                                                   "G000267"
+                                               ]
+                            },
+                            {
+                                "sample_index":  51,
+                                "family_id":  "14.1.F1",
+                                "member_ids":  [
+                                                   "G000507",
+                                                   "G000675",
+                                                   "G001461",
+                                                   "N000719",
+                                                   "N001191"
+                                               ]
+                            },
+                            {
+                                "sample_index":  52,
+                                "family_id":  "19.3.F1",
+                                "member_ids":  [
+                                                   "G000390",
+                                                   "G000399",
+                                                   "G001566",
+                                                   "N000074",
+                                                   "N000413",
+                                                   "N000637",
+                                                   "N001125",
+                                                   "N001324",
+                                                   "V000379",
+                                                   "V000818",
+                                                   "V000879",
+                                                   "V000887"
+                                               ]
+                            },
+                            {
+                                "sample_index":  53,
+                                "family_id":  "NM0117",
+                                "member_ids":  [
+                                                   "G000506"
+                                               ]
+                            },
+                            {
+                                "sample_index":  54,
+                                "family_id":  "17.4.F2",
+                                "member_ids":  [
+                                                   "G000930",
+                                                   "N000653",
+                                                   "N001605"
+                                               ]
+                            },
+                            {
+                                "sample_index":  55,
+                                "family_id":  "NM1166",
+                                "member_ids":  [
+                                                   "V001011"
+                                               ]
+                            },
+                            {
+                                "sample_index":  56,
+                                "family_id":  "NM0018",
+                                "member_ids":  [
+                                                   "G000083"
+                                               ]
+                            },
+                            {
+                                "sample_index":  57,
+                                "family_id":  "C0038.G01.F1",
+                                "member_ids":  [
+                                                   "G000017",
+                                                   "G000197",
+                                                   "G000283",
+                                                   "G000385",
+                                                   "G000811",
+                                                   "G000951",
+                                                   "G001061",
+                                                   "G001570",
+                                                   "G001608",
+                                                   "G001770",
+                                                   "G001911",
+                                                   "N000160",
+                                                   "N000338",
+                                                   "V000249",
+                                                   "V000263",
+                                                   "V000265",
+                                                   "V000269",
+                                                   "V000270",
+                                                   "V000271",
+                                                   "V000272",
+                                                   "V000273",
+                                                   "V000280",
+                                                   "V000283",
+                                                   "V000288"
+                                               ]
+                            },
+                            {
+                                "sample_index":  58,
+                                "family_id":  "40.0.F2",
+                                "member_ids":  [
+                                                   "G001159",
+                                                   "V000791"
+                                               ]
+                            },
+                            {
+                                "sample_index":  59,
+                                "family_id":  "NM1086",
+                                "member_ids":  [
+                                                   "V000668"
+                                               ]
+                            },
+                            {
+                                "sample_index":  60,
+                                "family_id":  "NM0680",
+                                "member_ids":  [
+                                                   "N000697"
+                                               ]
+                            },
+                            {
+                                "sample_index":  61,
+                                "family_id":  "NM0065",
+                                "member_ids":  [
+                                                   "G000276"
+                                               ]
+                            },
+                            {
+                                "sample_index":  62,
+                                "family_id":  "C0007.G03.F1",
+                                "member_ids":  [
+                                                   "G000487",
+                                                   "G000803",
+                                                   "N000282",
+                                                   "N000618",
+                                                   "N000829",
+                                                   "V000978"
+                                               ]
+                            },
+                            {
+                                "sample_index":  63,
+                                "family_id":  "C0027.G01.F1",
+                                "member_ids":  [
+                                                   "G000462",
+                                                   "G000520",
+                                                   "G000538",
+                                                   "G000734",
+                                                   "G000984",
+                                                   "G001259",
+                                                   "N000495",
+                                                   "N000611",
+                                                   "N000890",
+                                                   "N000925",
+                                                   "N000946",
+                                                   "N000987",
+                                                   "N001036",
+                                                   "N001253",
+                                                   "N001540",
+                                                   "N001761",
+                                                   "V000220",
+                                                   "V000951"
+                                               ]
+                            },
+                            {
+                                "sample_index":  64,
+                                "family_id":  "C0001.G05.F4",
+                                "member_ids":  [
+                                                   "G000925",
+                                                   "G001157",
+                                                   "N001331"
+                                               ]
+                            },
+                            {
+                                "sample_index":  65,
+                                "family_id":  "NM0579",
+                                "member_ids":  [
+                                                   "N000358"
+                                               ]
+                            },
+                            {
+                                "sample_index":  66,
+                                "family_id":  "NM0069",
+                                "member_ids":  [
+                                                   "G000294",
+                                                   "V000401",
+                                                   "V000402",
+                                                   "V000907"
+                                               ]
+                            },
+                            {
+                                "sample_index":  67,
+                                "family_id":  "NM0472",
+                                "member_ids":  [
+                                                   "N000017"
+                                               ]
+                            },
+                            {
+                                "sample_index":  68,
+                                "family_id":  "NM0501",
+                                "member_ids":  [
+                                                   "N000110"
+                                               ]
+                            },
+                            {
+                                "sample_index":  69,
+                                "family_id":  "NM1132",
+                                "member_ids":  [
+                                                   "V000849"
+                                               ]
+                            },
+                            {
+                                "sample_index":  70,
+                                "family_id":  "C0037.G01.F1",
+                                "member_ids":  [
+                                                   "G001221",
+                                                   "G001582",
+                                                   "G001919",
+                                                   "V000093",
+                                                   "V000097",
+                                                   "V000100",
+                                                   "V000118",
+                                                   "V000120",
+                                                   "V000121",
+                                                   "V000131",
+                                                   "V000133"
+                                               ]
+                            },
+                            {
+                                "sample_index":  71,
+                                "family_id":  "NM0813",
+                                "member_ids":  [
+                                                   "N001131"
+                                               ]
+                            },
+                            {
+                                "sample_index":  72,
+                                "family_id":  "NM0489",
+                                "member_ids":  [
+                                                   "N000071"
+                                               ]
+                            },
+                            {
+                                "sample_index":  73,
+                                "family_id":  "NM0767",
+                                "member_ids":  [
+                                                   "N000979"
+                                               ]
+                            },
+                            {
+                                "sample_index":  74,
+                                "family_id":  "NM0339",
+                                "member_ids":  [
+                                                   "G001462"
+                                               ]
+                            },
+                            {
+                                "sample_index":  75,
+                                "family_id":  "NM0114",
+                                "member_ids":  [
+                                                   "G000489"
+                                               ]
+                            },
+                            {
+                                "sample_index":  76,
+                                "family_id":  "NM1008",
+                                "member_ids":  [
+                                                   "V000026"
+                                               ]
+                            },
+                            {
+                                "sample_index":  77,
+                                "family_id":  "NM0809",
+                                "member_ids":  [
+                                                   "N001121"
+                                               ]
+                            },
+                            {
+                                "sample_index":  78,
+                                "family_id":  "23.1.F3",
+                                "member_ids":  [
+                                                   "N000504",
+                                                   "N000715"
+                                               ]
+                            },
+                            {
+                                "sample_index":  79,
+                                "family_id":  "NM0560",
+                                "member_ids":  [
+                                                   "N000308"
+                                               ]
+                            },
+                            {
+                                "sample_index":  80,
+                                "family_id":  "C0021.G01.F2",
+                                "member_ids":  [
+                                                   "G001628",
+                                                   "G001649",
+                                                   "G001651",
+                                                   "N001295"
+                                               ]
+                            },
+                            {
+                                "sample_index":  81,
+                                "family_id":  "NM0137",
+                                "member_ids":  [
+                                                   "G000615",
+                                                   "N001039"
+                                               ]
+                            },
+                            {
+                                "sample_index":  82,
+                                "family_id":  "C0004.G03.F2",
+                                "member_ids":  [
+                                                   "G000533",
+                                                   "G001246",
+                                                   "N000791",
+                                                   "N001615",
+                                                   "V000198",
+                                                   "V000505",
+                                                   "V000506",
+                                                   "V000507",
+                                                   "V000509",
+                                                   "V000510",
+                                                   "V000513",
+                                                   "V000997"
+                                               ]
+                            },
+                            {
+                                "sample_index":  83,
+                                "family_id":  "10.0.F6",
+                                "member_ids":  [
+                                                   "N001237",
+                                                   "V000671",
+                                                   "V000672"
+                                               ]
+                            },
+                            {
+                                "sample_index":  84,
+                                "family_id":  "NM0570",
+                                "member_ids":  [
+                                                   "N000323"
+                                               ]
+                            },
+                            {
+                                "sample_index":  85,
+                                "family_id":  "15.2.F1",
+                                "member_ids":  [
+                                                   "N000993",
+                                                   "N001386"
+                                               ]
+                            },
+                            {
+                                "sample_index":  86,
+                                "family_id":  "NM0615",
+                                "member_ids":  [
+                                                   "N000482"
+                                               ]
+                            },
+                            {
+                                "sample_index":  87,
+                                "family_id":  "NM0485",
+                                "member_ids":  [
+                                                   "N000060"
+                                               ]
+                            },
+                            {
+                                "sample_index":  88,
+                                "family_id":  "C0030.G01.F1",
+                                "member_ids":  [
+                                                   "G000085",
+                                                   "G000226",
+                                                   "G001094",
+                                                   "G001333",
+                                                   "N000337",
+                                                   "V000549",
+                                                   "V000806"
+                                               ]
+                            },
+                            {
+                                "sample_index":  89,
+                                "family_id":  "NM0946",
+                                "member_ids":  [
+                                                   "N001616"
+                                               ]
+                            },
+                            {
+                                "sample_index":  90,
+                                "family_id":  "NM0135",
+                                "member_ids":  [
+                                                   "G000597",
+                                                   "G001913",
+                                                   "N000926"
+                                               ]
+                            },
+                            {
+                                "sample_index":  91,
+                                "family_id":  "NM0588",
+                                "member_ids":  [
+                                                   "N000386",
+                                                   "N000489",
+                                                   "N001161"
+                                               ]
+                            },
+                            {
+                                "sample_index":  92,
+                                "family_id":  "C0011.G02.F1",
+                                "member_ids":  [
+                                                   "G000428",
+                                                   "G000555",
+                                                   "G000644",
+                                                   "G000676",
+                                                   "G001145",
+                                                   "G001195",
+                                                   "G001766",
+                                                   "N000867",
+                                                   "N001063",
+                                                   "N001243",
+                                                   "N001735",
+                                                   "V000365",
+                                                   "V000445",
+                                                   "V000447",
+                                                   "V000450",
+                                                   "V000451",
+                                                   "V000453",
+                                                   "V000455",
+                                                   "V000573",
+                                                   "V000658",
+                                                   "V000660",
+                                                   "V000771"
+                                               ]
+                            },
+                            {
+                                "sample_index":  93,
+                                "family_id":  "NM0078",
+                                "member_ids":  [
+                                                   "G000316"
+                                               ]
+                            },
+                            {
+                                "sample_index":  94,
+                                "family_id":  "NM0990",
+                                "member_ids":  [
+                                                   "N001757"
+                                               ]
+                            },
+                            {
+                                "sample_index":  95,
+                                "family_id":  "5.1.F3",
+                                "member_ids":  [
+                                                   "G001440",
+                                                   "V000710",
+                                                   "V000711"
+                                               ]
+                            },
+                            {
+                                "sample_index":  96,
+                                "family_id":  "NM0962",
+                                "member_ids":  [
+                                                   "N001693"
+                                               ]
+                            },
+                            {
+                                "sample_index":  97,
+                                "family_id":  "NM0136",
+                                "member_ids":  [
+                                                   "G000606"
+                                               ]
+                            },
+                            {
+                                "sample_index":  98,
+                                "family_id":  "C0061.G01.F2",
+                                "member_ids":  [
+                                                   "G001802",
+                                                   "N001088",
+                                                   "N001576",
+                                                   "N001602",
+                                                   "V000237"
+                                               ]
+                            },
+                            {
+                                "sample_index":  99,
+                                "family_id":  "NM0462",
+                                "member_ids":  [
+                                                   "G001905",
+                                                   "N001163",
+                                                   "V000092",
+                                                   "V000259",
+                                                   "V000276"
+                                               ]
+                            },
+                            {
+                                "sample_index":  100,
+                                "family_id":  "NM0287",
+                                "member_ids":  [
+                                                   "G001238"
+                                               ]
+                            },
+                            {
+                                "sample_index":  101,
+                                "family_id":  "NM0155",
+                                "member_ids":  [
+                                                   "G000703"
+                                               ]
+                            },
+                            {
+                                "sample_index":  102,
+                                "family_id":  "NM0437",
+                                "member_ids":  [
+                                                   "G001804"
+                                               ]
+                            },
+                            {
+                                "sample_index":  103,
+                                "family_id":  "C0036.G01.F1",
+                                "member_ids":  [
+                                                   "G000030",
+                                                   "G000320",
+                                                   "V000613",
+                                                   "V000614"
+                                               ]
+                            },
+                            {
+                                "sample_index":  104,
+                                "family_id":  "NM0672",
+                                "member_ids":  [
+                                                   "N000671"
+                                               ]
+                            },
+                            {
+                                "sample_index":  105,
+                                "family_id":  "32.0.F1",
+                                "member_ids":  [
+                                                   "G000106",
+                                                   "G000332",
+                                                   "G000704",
+                                                   "G001046",
+                                                   "G001048",
+                                                   "N001730"
+                                               ]
+                            },
+                            {
+                                "sample_index":  106,
+                                "family_id":  "NM0764",
+                                "member_ids":  [
+                                                   "N000971"
+                                               ]
+                            },
+                            {
+                                "sample_index":  107,
+                                "family_id":  "NM0086",
+                                "member_ids":  [
+                                                   "G000367"
+                                               ]
+                            },
+                            {
+                                "sample_index":  108,
+                                "family_id":  "3.3.F1",
+                                "member_ids":  [
+                                                   "G000825",
+                                                   "V000291",
+                                                   "V000768",
+                                                   "V000825"
+                                               ]
+                            },
+                            {
+                                "sample_index":  109,
+                                "family_id":  "NM0521",
+                                "member_ids":  [
+                                                   "N000168"
+                                               ]
+                            },
+                            {
+                                "sample_index":  110,
+                                "family_id":  "NM0047",
+                                "member_ids":  [
+                                                   "G000206"
+                                               ]
+                            },
+                            {
+                                "sample_index":  111,
+                                "family_id":  "NM0292",
+                                "member_ids":  [
+                                                   "G001258",
+                                                   "N000088"
+                                               ]
+                            },
+                            {
+                                "sample_index":  112,
+                                "family_id":  "14.0.F3",
+                                "member_ids":  [
+                                                   "N000137",
+                                                   "N000211",
+                                                   "N000600",
+                                                   "N000817",
+                                                   "N001501"
+                                               ]
+                            },
+                            {
+                                "sample_index":  113,
+                                "family_id":  "C0002.G04.F2",
+                                "member_ids":  [
+                                                   "N000665",
+                                                   "N001181",
+                                                   "V000387",
+                                                   "V000390"
+                                               ]
+                            },
+                            {
+                                "sample_index":  114,
+                                "family_id":  "NM0002",
+                                "member_ids":  [
+                                                   "G000008"
+                                               ]
+                            },
+                            {
+                                "sample_index":  115,
+                                "family_id":  "NM0196",
+                                "member_ids":  [
+                                                   "G000841"
+                                               ]
+                            },
+                            {
+                                "sample_index":  116,
+                                "family_id":  "NM0580",
+                                "member_ids":  [
+                                                   "N000359"
+                                               ]
+                            },
+                            {
+                                "sample_index":  117,
+                                "family_id":  "NM0995",
+                                "member_ids":  [
+                                                   "N001769"
+                                               ]
+                            },
+                            {
+                                "sample_index":  118,
+                                "family_id":  "C0020.G02.F1",
+                                "member_ids":  [
+                                                   "N000698",
+                                                   "N001314",
+                                                   "N001739",
+                                                   "V000860"
+                                               ]
+                            },
+                            {
+                                "sample_index":  119,
+                                "family_id":  "NM0590",
+                                "member_ids":  [
+                                                   "N000390"
+                                               ]
+                            },
+                            {
+                                "sample_index":  120,
+                                "family_id":  "NM0151",
+                                "member_ids":  [
+                                                   "G000681"
+                                               ]
+                            },
+                            {
+                                "sample_index":  121,
+                                "family_id":  "C0002.G04.F1",
+                                "member_ids":  [
+                                                   "G000382",
+                                                   "G000791",
+                                                   "G001047",
+                                                   "G001887",
+                                                   "N000265",
+                                                   "N000941",
+                                                   "N001179",
+                                                   "N001296",
+                                                   "N001594",
+                                                   "N001665",
+                                                   "N001673",
+                                                   "N001690",
+                                                   "V000243"
+                                               ]
+                            },
+                            {
+                                "sample_index":  122,
+                                "family_id":  "NM0932",
+                                "member_ids":  [
+                                                   "N001577"
+                                               ]
+                            },
+                            {
+                                "sample_index":  123,
+                                "family_id":  "NM0179",
+                                "member_ids":  [
+                                                   "G000790"
+                                               ]
+                            },
+                            {
+                                "sample_index":  124,
+                                "family_id":  "C0017.G01.F2",
+                                "member_ids":  [
+                                                   "G000189",
+                                                   "N001060",
+                                                   "N001585"
+                                               ]
+                            },
+                            {
+                                "sample_index":  125,
+                                "family_id":  "NM1125",
+                                "member_ids":  [
+                                                   "V000821"
+                                               ]
+                            },
+                            {
+                                "sample_index":  126,
+                                "family_id":  "C0029.G02.F2",
+                                "member_ids":  [
+                                                   "G000137",
+                                                   "G000897"
+                                               ]
+                            },
+                            {
+                                "sample_index":  127,
+                                "family_id":  "NM1048",
+                                "member_ids":  [
+                                                   "V000381"
+                                               ]
+                            },
+                            {
+                                "sample_index":  128,
+                                "family_id":  "NM0309",
+                                "member_ids":  [
+                                                   "G001344"
+                                               ]
+                            },
+                            {
+                                "sample_index":  129,
+                                "family_id":  "C0031.G01.F2",
+                                "member_ids":  [
+                                                   "G000521",
+                                                   "G001321",
+                                                   "G001327"
+                                               ]
+                            },
+                            {
+                                "sample_index":  130,
+                                "family_id":  "C0035.G01.F1",
+                                "member_ids":  [
+                                                   "G000366",
+                                                   "G000880",
+                                                   "G000947",
+                                                   "G001204",
+                                                   "G001377",
+                                                   "G001494",
+                                                   "G001562",
+                                                   "G001707",
+                                                   "G001783",
+                                                   "G001792",
+                                                   "N000025",
+                                                   "N000291",
+                                                   "N000962",
+                                                   "N000972",
+                                                   "N001122",
+                                                   "N001173",
+                                                   "N001231",
+                                                   "N001653",
+                                                   "N001681",
+                                                   "V000565",
+                                                   "V000578",
+                                                   "V000783",
+                                                   "V000940"
+                                               ]
+                            },
+                            {
+                                "sample_index":  131,
+                                "family_id":  "C0003.G01.F1",
+                                "member_ids":  [
+                                                   "G000996",
+                                                   "N001022"
+                                               ]
+                            },
+                            {
+                                "sample_index":  132,
+                                "family_id":  "NM0744",
+                                "member_ids":  [
+                                                   "N000903"
+                                               ]
+                            },
+                            {
+                                "sample_index":  133,
+                                "family_id":  "NM0927",
+                                "member_ids":  [
+                                                   "N001556"
+                                               ]
+                            },
+                            {
+                                "sample_index":  134,
+                                "family_id":  "NM0099",
+                                "member_ids":  [
+                                                   "G000415"
+                                               ]
+                            },
+                            {
+                                "sample_index":  135,
+                                "family_id":  "57.0.F1",
+                                "member_ids":  [
+                                                   "G001412",
+                                                   "N000557",
+                                                   "N001297",
+                                                   "N001685",
+                                                   "V000737"
+                                               ]
+                            },
+                            {
+                                "sample_index":  136,
+                                "family_id":  "NM0200",
+                                "member_ids":  [
+                                                   "G000853"
+                                               ]
+                            },
+                            {
+                                "sample_index":  137,
+                                "family_id":  "NM0217",
+                                "member_ids":  [
+                                                   "G000932"
+                                               ]
+                            },
+                            {
+                                "sample_index":  138,
+                                "family_id":  "NM0351",
+                                "member_ids":  [
+                                                   "G001506"
+                                               ]
+                            },
+                            {
+                                "sample_index":  139,
+                                "family_id":  "C0035.G01.F2",
+                                "member_ids":  [
+                                                   "G000158",
+                                                   "G000839",
+                                                   "G001836",
+                                                   "N000002",
+                                                   "N000161",
+                                                   "N000206",
+                                                   "N000896",
+                                                   "N000934",
+                                                   "N001075",
+                                                   "N001195",
+                                                   "N001498",
+                                                   "V000682"
+                                               ]
+                            },
+                            {
+                                "sample_index":  140,
+                                "family_id":  "NM0040",
+                                "member_ids":  [
+                                                   "G000176"
+                                               ]
+                            },
+                            {
+                                "sample_index":  141,
+                                "family_id":  "NM1070",
+                                "member_ids":  [
+                                                   "V000524"
+                                               ]
+                            },
+                            {
+                                "sample_index":  142,
+                                "family_id":  "C0065.G01.F2",
+                                "member_ids":  [
+                                                   "N001525",
+                                                   "V000976"
+                                               ]
+                            },
+                            {
+                                "sample_index":  143,
+                                "family_id":  "NM0943",
+                                "member_ids":  [
+                                                   "N001606"
+                                               ]
+                            },
+                            {
+                                "sample_index":  144,
+                                "family_id":  "NM0415",
+                                "member_ids":  [
+                                                   "G001722"
+                                               ]
+                            },
+                            {
+                                "sample_index":  145,
+                                "family_id":  "NM0481",
+                                "member_ids":  [
+                                                   "N000043"
+                                               ]
+                            },
+                            {
+                                "sample_index":  146,
+                                "family_id":  "NM0897",
+                                "member_ids":  [
+                                                   "N001438"
+                                               ]
+                            },
+                            {
+                                "sample_index":  147,
+                                "family_id":  "C0057.G01.F1",
+                                "member_ids":  [
+                                                   "G000255",
+                                                   "G001303",
+                                                   "N001434"
+                                               ]
+                            },
+                            {
+                                "sample_index":  148,
+                                "family_id":  "NM0690",
+                                "member_ids":  [
+                                                   "N000721",
+                                                   "N001597",
+                                                   "N001732",
+                                                   "N001736"
+                                               ]
+                            },
+                            {
+                                "sample_index":  149,
+                                "family_id":  "NM1057",
+                                "member_ids":  [
+                                                   "V000419"
+                                               ]
+                            },
+                            {
+                                "sample_index":  150,
+                                "family_id":  "NM0717",
+                                "member_ids":  [
+                                                   "N000807"
+                                               ]
+                            },
+                            {
+                                "sample_index":  151,
+                                "family_id":  "C0015.G01.F2",
+                                "member_ids":  [
+                                                   "G000937",
+                                                   "G000943"
+                                               ]
+                            },
+                            {
+                                "sample_index":  152,
+                                "family_id":  "NM0693",
+                                "member_ids":  [
+                                                   "N000729"
+                                               ]
+                            },
+                            {
+                                "sample_index":  153,
+                                "family_id":  "NM0112",
+                                "member_ids":  [
+                                                   "G000471"
+                                               ]
+                            },
+                            {
+                                "sample_index":  154,
+                                "family_id":  "NM1059",
+                                "member_ids":  [
+                                                   "V000425"
+                                               ]
+                            },
+                            {
+                                "sample_index":  155,
+                                "family_id":  "NM0144",
+                                "member_ids":  [
+                                                   "G000631",
+                                                   "G001614"
+                                               ]
+                            },
+                            {
+                                "sample_index":  156,
+                                "family_id":  "NM0925",
+                                "member_ids":  [
+                                                   "N001553"
+                                               ]
+                            },
+                            {
+                                "sample_index":  157,
+                                "family_id":  "NM0930",
+                                "member_ids":  [
+                                                   "N001568"
+                                               ]
+                            },
+                            {
+                                "sample_index":  158,
+                                "family_id":  "19.2.F1",
+                                "member_ids":  [
+                                                   "G000122",
+                                                   "G001334"
+                                               ]
+                            },
+                            {
+                                "sample_index":  159,
+                                "family_id":  "NM0600",
+                                "member_ids":  [
+                                                   "N000427"
+                                               ]
+                            },
+                            {
+                                "sample_index":  160,
+                                "family_id":  "19.2.F4",
+                                "member_ids":  [
+                                                   "G001426",
+                                                   "N000723",
+                                                   "N001427",
+                                                   "V000485"
+                                               ]
+                            },
+                            {
+                                "sample_index":  161,
+                                "family_id":  "21.1.F1",
+                                "member_ids":  [
+                                                   "G000517",
+                                                   "N000516",
+                                                   "V000805"
+                                               ]
+                            },
+                            {
+                                "sample_index":  162,
+                                "family_id":  "NM0612",
+                                "member_ids":  [
+                                                   "N000465"
+                                               ]
+                            },
+                            {
+                                "sample_index":  163,
+                                "family_id":  "NM0973",
+                                "member_ids":  [
+                                                   "N001713"
+                                               ]
+                            },
+                            {
+                                "sample_index":  164,
+                                "family_id":  "NM0870",
+                                "member_ids":  [
+                                                   "N001343"
+                                               ]
+                            },
+                            {
+                                "sample_index":  165,
+                                "family_id":  "C0022.G01.F2",
+                                "member_ids":  [
+                                                   "G001228",
+                                                   "N001015"
+                                               ]
+                            },
+                            {
+                                "sample_index":  166,
+                                "family_id":  "NM0195",
+                                "member_ids":  [
+                                                   "G000840"
+                                               ]
+                            },
+                            {
+                                "sample_index":  167,
+                                "family_id":  "NM0029",
+                                "member_ids":  [
+                                                   "G000115"
+                                               ]
+                            },
+                            {
+                                "sample_index":  168,
+                                "family_id":  "NM0701",
+                                "member_ids":  [
+                                                   "N000746"
+                                               ]
+                            },
+                            {
+                                "sample_index":  169,
+                                "family_id":  "C0053.G01.F2",
+                                "member_ids":  [
+                                                   "G000099",
+                                                   "G000123",
+                                                   "G000867",
+                                                   "G001115",
+                                                   "G001118",
+                                                   "V000853",
+                                                   "V000880",
+                                                   "V000894"
+                                               ]
+                            },
+                            {
+                                "sample_index":  170,
+                                "family_id":  "C0008.G01.F2",
+                                "member_ids":  [
+                                                   "G000129",
+                                                   "G000270",
+                                                   "G000304",
+                                                   "G001502",
+                                                   "N000627",
+                                                   "N001747"
+                                               ]
+                            },
+                            {
+                                "sample_index":  171,
+                                "family_id":  "24.4.F1",
+                                "member_ids":  [
+                                                   "G001289",
+                                                   "V000913"
+                                               ]
+                            },
+                            {
+                                "sample_index":  172,
+                                "family_id":  "NM0881",
+                                "member_ids":  [
+                                                   "N001374"
+                                               ]
+                            },
+                            {
+                                "sample_index":  173,
+                                "family_id":  "NM0645",
+                                "member_ids":  [
+                                                   "N000567"
+                                               ]
+                            },
+                            {
+                                "sample_index":  174,
+                                "family_id":  "C0020.G02.F2",
+                                "member_ids":  [
+                                                   "N000680",
+                                                   "N000787",
+                                                   "N001600"
+                                               ]
+                            },
+                            {
+                                "sample_index":  175,
+                                "family_id":  "NM1074",
+                                "member_ids":  [
+                                                   "V000570"
+                                               ]
+                            },
+                            {
+                                "sample_index":  176,
+                                "family_id":  "NM0272",
+                                "member_ids":  [
+                                                   "G001183"
+                                               ]
+                            },
+                            {
+                                "sample_index":  177,
+                                "family_id":  "NM0280",
+                                "member_ids":  [
+                                                   "G001207"
+                                               ]
+                            },
+                            {
+                                "sample_index":  178,
+                                "family_id":  "NM0249",
+                                "member_ids":  [
+                                                   "G001051"
+                                               ]
+                            },
+                            {
+                                "sample_index":  179,
+                                "family_id":  "NM0028",
+                                "member_ids":  [
+                                                   "G000112"
+                                               ]
+                            },
+                            {
+                                "sample_index":  180,
+                                "family_id":  "C0008.G01.F3",
+                                "member_ids":  [
+                                                   "G001468",
+                                                   "N000289",
+                                                   "N001699",
+                                                   "N001795"
+                                               ]
+                            },
+                            {
+                                "sample_index":  181,
+                                "family_id":  "NM0154",
+                                "member_ids":  [
+                                                   "G000697",
+                                                   "N001379"
+                                               ]
+                            },
+                            {
+                                "sample_index":  182,
+                                "family_id":  "24.0.F4",
+                                "member_ids":  [
+                                                   "G000761",
+                                                   "N001644"
+                                               ]
+                            },
+                            {
+                                "sample_index":  183,
+                                "family_id":  "NM0603",
+                                "member_ids":  [
+                                                   "N000434"
+                                               ]
+                            },
+                            {
+                                "sample_index":  184,
+                                "family_id":  "C0070.G01.F1",
+                                "member_ids":  [
+                                                   "G001416",
+                                                   "G001471",
+                                                   "G001473",
+                                                   "G001474",
+                                                   "G001531",
+                                                   "G001548",
+                                                   "N000290"
+                                               ]
+                            },
+                            {
+                                "sample_index":  185,
+                                "family_id":  "NM0652",
+                                "member_ids":  [
+                                                   "N000592"
+                                               ]
+                            },
+                            {
+                                "sample_index":  186,
+                                "family_id":  "C0022.G02.F3",
+                                "member_ids":  [
+                                                   "G000793",
+                                                   "N000488",
+                                                   "V000846"
+                                               ]
+                            },
+                            {
+                                "sample_index":  187,
+                                "family_id":  "NM0916",
+                                "member_ids":  [
+                                                   "N001510"
+                                               ]
+                            },
+                            {
+                                "sample_index":  188,
+                                "family_id":  "60.0.F1",
+                                "member_ids":  [
+                                                   "N000656",
+                                                   "N001629"
+                                               ]
+                            },
+                            {
+                                "sample_index":  189,
+                                "family_id":  "NM0459",
+                                "member_ids":  [
+                                                   "G001893"
+                                               ]
+                            },
+                            {
+                                "sample_index":  190,
+                                "family_id":  "NM0070",
+                                "member_ids":  [
+                                                   "G000296"
+                                               ]
+                            },
+                            {
+                                "sample_index":  191,
+                                "family_id":  "12.1.F1",
+                                "member_ids":  [
+                                                   "G000034",
+                                                   "G000040",
+                                                   "G001253",
+                                                   "N001047"
+                                               ]
+                            },
+                            {
+                                "sample_index":  192,
+                                "family_id":  "NM0403",
+                                "member_ids":  [
+                                                   "G001687"
+                                               ]
+                            },
+                            {
+                                "sample_index":  193,
+                                "family_id":  "NM0250",
+                                "member_ids":  [
+                                                   "G001053"
+                                               ]
+                            },
+                            {
+                                "sample_index":  194,
+                                "family_id":  "NM0275",
+                                "member_ids":  [
+                                                   "G001194"
+                                               ]
+                            },
+                            {
+                                "sample_index":  195,
+                                "family_id":  "NM0227",
+                                "member_ids":  [
+                                                   "G000974"
+                                               ]
+                            },
+                            {
+                                "sample_index":  196,
+                                "family_id":  "NM0553",
+                                "member_ids":  [
+                                                   "N000279"
+                                               ]
+                            },
+                            {
+                                "sample_index":  197,
+                                "family_id":  "NM0507",
+                                "member_ids":  [
+                                                   "N000123"
+                                               ]
+                            },
+                            {
+                                "sample_index":  198,
+                                "family_id":  "7.3.F4",
+                                "member_ids":  [
+                                                   "G001556",
+                                                   "V000994"
+                                               ]
+                            },
+                            {
+                                "sample_index":  199,
+                                "family_id":  "NM0208",
+                                "member_ids":  [
+                                                   "G000874"
+                                               ]
+                            },
+                            {
+                                "sample_index":  200,
+                                "family_id":  "NM1105",
+                                "member_ids":  [
+                                                   "V000743"
+                                               ]
+                            },
+                            {
+                                "sample_index":  201,
+                                "family_id":  "NM0133",
+                                "member_ids":  [
+                                                   "G000583"
+                                               ]
+                            },
+                            {
+                                "sample_index":  202,
+                                "family_id":  "NM1089",
+                                "member_ids":  [
+                                                   "V000681"
+                                               ]
+                            },
+                            {
+                                "sample_index":  203,
+                                "family_id":  "NM0653",
+                                "member_ids":  [
+                                                   "N000594"
+                                               ]
+                            },
+                            {
+                                "sample_index":  204,
+                                "family_id":  "NM0805",
+                                "member_ids":  [
+                                                   "N001104"
+                                               ]
+                            },
+                            {
+                                "sample_index":  205,
+                                "family_id":  "NM0108",
+                                "member_ids":  [
+                                                   "G000453"
+                                               ]
+                            },
+                            {
+                                "sample_index":  206,
+                                "family_id":  "NM0123",
+                                "member_ids":  [
+                                                   "G000535"
+                                               ]
+                            },
+                            {
+                                "sample_index":  207,
+                                "family_id":  "NM0004",
+                                "member_ids":  [
+                                                   "G000013",
+                                                   "N000519"
+                                               ]
+                            },
+                            {
+                                "sample_index":  208,
+                                "family_id":  "NM0755",
+                                "member_ids":  [
+                                                   "N000930"
+                                               ]
+                            },
+                            {
+                                "sample_index":  209,
+                                "family_id":  "NM0657",
+                                "member_ids":  [
+                                                   "N000622"
+                                               ]
+                            },
+                            {
+                                "sample_index":  210,
+                                "family_id":  "NM0315",
+                                "member_ids":  [
+                                                   "G001362",
+                                                   "G001665",
+                                                   "N000918",
+                                                   "N001144",
+                                                   "N001706"
+                                               ]
+                            },
+                            {
+                                "sample_index":  211,
+                                "family_id":  "25.2.F2",
+                                "member_ids":  [
+                                                   "G000084",
+                                                   "G000275",
+                                                   "G001615",
+                                                   "G001662",
+                                                   "N000457",
+                                                   "N001573",
+                                                   "V000024",
+                                                   "V000663"
+                                               ]
+                            },
+                            {
+                                "sample_index":  212,
+                                "family_id":  "NM0478",
+                                "member_ids":  [
+                                                   "N000034"
+                                               ]
+                            },
+                            {
+                                "sample_index":  213,
+                                "family_id":  "NM0761",
+                                "member_ids":  [
+                                                   "N000961",
+                                                   "N001187",
+                                                   "N001462"
+                                               ]
+                            },
+                            {
+                                "sample_index":  214,
+                                "family_id":  "NM0101",
+                                "member_ids":  [
+                                                   "G000438",
+                                                   "N001028",
+                                                   "N001621"
+                                               ]
+                            },
+                            {
+                                "sample_index":  215,
+                                "family_id":  "NM0138",
+                                "member_ids":  [
+                                                   "G000616",
+                                                   "G001683"
+                                               ]
+                            },
+                            {
+                                "sample_index":  216,
+                                "family_id":  "45.0.F1",
+                                "member_ids":  [
+                                                   "G000291",
+                                                   "G000860",
+                                                   "G001097",
+                                                   "G001164",
+                                                   "N000799",
+                                                   "N001444"
+                                               ]
+                            },
+                            {
+                                "sample_index":  217,
+                                "family_id":  "C0015.G01.F1",
+                                "member_ids":  [
+                                                   "G000472",
+                                                   "G000474"
+                                               ]
+                            },
+                            {
+                                "sample_index":  218,
+                                "family_id":  "NM0515",
+                                "member_ids":  [
+                                                   "N000136"
+                                               ]
+                            },
+                            {
+                                "sample_index":  219,
+                                "family_id":  "NM0849",
+                                "member_ids":  [
+                                                   "N001280"
+                                               ]
+                            },
+                            {
+                                "sample_index":  220,
+                                "family_id":  "NM0233",
+                                "member_ids":  [
+                                                   "G000991"
+                                               ]
+                            },
+                            {
+                                "sample_index":  221,
+                                "family_id":  "NM0411",
+                                "member_ids":  [
+                                                   "G001714"
+                                               ]
+                            },
+                            {
+                                "sample_index":  222,
+                                "family_id":  "NM0522",
+                                "member_ids":  [
+                                                   "N000170"
+                                               ]
+                            },
+                            {
+                                "sample_index":  223,
+                                "family_id":  "7.0.F2",
+                                "member_ids":  [
+                                                   "G000427",
+                                                   "N001315"
+                                               ]
+                            },
+                            {
+                                "sample_index":  224,
+                                "family_id":  "14.3.F2",
+                                "member_ids":  [
+                                                   "N000768",
+                                                   "N000923"
+                                               ]
+                            },
+                            {
+                                "sample_index":  225,
+                                "family_id":  "4.0.F5",
+                                "member_ids":  [
+                                                   "V000123",
+                                                   "V000141",
+                                                   "V000144",
+                                                   "V000553"
+                                               ]
+                            },
+                            {
+                                "sample_index":  226,
+                                "family_id":  "NM0223",
+                                "member_ids":  [
+                                                   "G000959",
+                                                   "N000130",
+                                                   "N001192"
+                                               ]
+                            },
+                            {
+                                "sample_index":  227,
+                                "family_id":  "18.3.F1",
+                                "member_ids":  [
+                                                   "G000224",
+                                                   "G001227",
+                                                   "N000189"
+                                               ]
+                            },
+                            {
+                                "sample_index":  228,
+                                "family_id":  "C0058.G01.F2",
+                                "member_ids":  [
+                                                   "G000269",
+                                                   "G000310",
+                                                   "N001371",
+                                                   "N001403"
+                                               ]
+                            },
+                            {
+                                "sample_index":  229,
+                                "family_id":  "NM0726",
+                                "member_ids":  [
+                                                   "N000849"
+                                               ]
+                            },
+                            {
+                                "sample_index":  230,
+                                "family_id":  "NM0058",
+                                "member_ids":  [
+                                                   "G000242"
+                                               ]
+                            },
+                            {
+                                "sample_index":  231,
+                                "family_id":  "NM0709",
+                                "member_ids":  [
+                                                   "N000779"
+                                               ]
+                            },
+                            {
+                                "sample_index":  232,
+                                "family_id":  "NM0808",
+                                "member_ids":  [
+                                                   "N001113"
+                                               ]
+                            },
+                            {
+                                "sample_index":  233,
+                                "family_id":  "NM0908",
+                                "member_ids":  [
+                                                   "N001473"
+                                               ]
+                            },
+                            {
+                                "sample_index":  234,
+                                "family_id":  "NM0357",
+                                "member_ids":  [
+                                                   "G001532"
+                                               ]
+                            },
+                            {
+                                "sample_index":  235,
+                                "family_id":  "NM0269",
+                                "member_ids":  [
+                                                   "G001168"
+                                               ]
+                            },
+                            {
+                                "sample_index":  236,
+                                "family_id":  "NM0794",
+                                "member_ids":  [
+                                                   "N001067"
+                                               ]
+                            },
+                            {
+                                "sample_index":  237,
+                                "family_id":  "C0082.G01.F1",
+                                "member_ids":  [
+                                                   "G000480",
+                                                   "G001058",
+                                                   "N001592"
+                                               ]
+                            },
+                            {
+                                "sample_index":  238,
+                                "family_id":  "108.0.F1",
+                                "member_ids":  [
+                                                   "N000677",
+                                                   "N001557"
+                                               ]
+                            },
+                            {
+                                "sample_index":  239,
+                                "family_id":  "NM0394",
+                                "member_ids":  [
+                                                   "G001661"
+                                               ]
+                            },
+                            {
+                                "sample_index":  240,
+                                "family_id":  "NM0597",
+                                "member_ids":  [
+                                                   "N000408"
+                                               ]
+                            },
+                            {
+                                "sample_index":  241,
+                                "family_id":  "NM0730",
+                                "member_ids":  [
+                                                   "N000859"
+                                               ]
+                            },
+                            {
+                                "sample_index":  242,
+                                "family_id":  "NM0085",
+                                "member_ids":  [
+                                                   "G000358"
+                                               ]
+                            },
+                            {
+                                "sample_index":  243,
+                                "family_id":  "NM0231",
+                                "member_ids":  [
+                                                   "G000989"
+                                               ]
+                            },
+                            {
+                                "sample_index":  244,
+                                "family_id":  "NM0554",
+                                "member_ids":  [
+                                                   "N000280"
+                                               ]
+                            },
+                            {
+                                "sample_index":  245,
+                                "family_id":  "7.0.F4",
+                                "member_ids":  [
+                                                   "N000991",
+                                                   "N001784"
+                                               ]
+                            },
+                            {
+                                "sample_index":  246,
+                                "family_id":  "10.2.F5",
+                                "member_ids":  [
+                                                   "G001211",
+                                                   "N000673",
+                                                   "N000679",
+                                                   "N001160"
+                                               ]
+                            },
+                            {
+                                "sample_index":  247,
+                                "family_id":  "NM0436",
+                                "member_ids":  [
+                                                   "G001799",
+                                                   "V000801",
+                                                   "V000830"
+                                               ]
+                            },
+                            {
+                                "sample_index":  248,
+                                "family_id":  "NM0495",
+                                "member_ids":  [
+                                                   "N000093"
+                                               ]
+                            },
+                            {
+                                "sample_index":  249,
+                                "family_id":  "C0054.G01.F1",
+                                "member_ids":  [
+                                                   "G000241",
+                                                   "G000430",
+                                                   "G000622",
+                                                   "G000886",
+                                                   "G000891",
+                                                   "G001176",
+                                                   "G001286",
+                                                   "G001299",
+                                                   "G001487",
+                                                   "G001846",
+                                                   "G001847",
+                                                   "G001880",
+                                                   "N000269",
+                                                   "N000476",
+                                                   "N000605",
+                                                   "N001773",
+                                                   "V000430",
+                                                   "V000435",
+                                                   "V000577",
+                                                   "V000586"
+                                               ]
+                            },
+                            {
+                                "sample_index":  250,
+                                "family_id":  "C0006.G01.F1",
+                                "member_ids":  [
+                                                   "G000004",
+                                                   "G000068",
+                                                   "G000252",
+                                                   "G000342",
+                                                   "G000423",
+                                                   "G000429",
+                                                   "G000528",
+                                                   "G000783",
+                                                   "G001178",
+                                                   "G001294",
+                                                   "G001395",
+                                                   "G001677",
+                                                   "G001720",
+                                                   "G001721",
+                                                   "G001734",
+                                                   "G001771",
+                                                   "G001837",
+                                                   "N000155",
+                                                   "N000202",
+                                                   "N000385",
+                                                   "N000481",
+                                                   "N000643",
+                                                   "N000645",
+                                                   "N000906",
+                                                   "N000936",
+                                                   "N000982",
+                                                   "N001412",
+                                                   "N001476",
+                                                   "N001499",
+                                                   "N001603",
+                                                   "N001637",
+                                                   "V000115",
+                                                   "V000432",
+                                                   "V000433",
+                                                   "V000434",
+                                                   "V000436",
+                                                   "V000437",
+                                                   "V000438",
+                                                   "V000439",
+                                                   "V000440",
+                                                   "V000442",
+                                                   "V000500"
+                                               ]
+                            },
+                            {
+                                "sample_index":  251,
+                                "family_id":  "0.1.F1",
+                                "member_ids":  [
+                                                   "G000154",
+                                                   "N001571"
+                                               ]
+                            },
+                            {
+                                "sample_index":  252,
+                                "family_id":  "14.2.F3",
+                                "member_ids":  [
+                                                   "N000595",
+                                                   "N000809",
+                                                   "N001332",
+                                                   "N001549"
+                                               ]
+                            },
+                            {
+                                "sample_index":  253,
+                                "family_id":  "9.3.F3",
+                                "member_ids":  [
+                                                   "G000955",
+                                                   "G000967"
+                                               ]
+                            },
+                            {
+                                "sample_index":  254,
+                                "family_id":  "C0024.G01.F3",
+                                "member_ids":  [
+                                                   "G000074",
+                                                   "G000194",
+                                                   "G000553",
+                                                   "G001366",
+                                                   "G001637",
+                                                   "V000116",
+                                                   "V000129",
+                                                   "V000137",
+                                                   "V000148",
+                                                   "V000730"
+                                               ]
+                            },
+                            {
+                                "sample_index":  255,
+                                "family_id":  "C0018.G01.F3",
+                                "member_ids":  [
+                                                   "G000690",
+                                                   "V000175"
+                                               ]
+                            },
+                            {
+                                "sample_index":  256,
+                                "family_id":  "NM0787",
+                                "member_ids":  [
+                                                   "N001045"
+                                               ]
+                            },
+                            {
+                                "sample_index":  257,
+                                "family_id":  "C0016.G02.F2",
+                                "member_ids":  [
+                                                   "G001708",
+                                                   "G001765",
+                                                   "G001809",
+                                                   "N000875",
+                                                   "N001505"
+                                               ]
+                            },
+                            {
+                                "sample_index":  258,
+                                "family_id":  "NM0920",
+                                "member_ids":  [
+                                                   "N001526"
+                                               ]
+                            },
+                            {
+                                "sample_index":  259,
+                                "family_id":  "NM0483",
+                                "member_ids":  [
+                                                   "N000053"
+                                               ]
+                            },
+                            {
+                                "sample_index":  260,
+                                "family_id":  "C0028.G01.F1",
+                                "member_ids":  [
+                                                   "G000027",
+                                                   "G001419",
+                                                   "G001424",
+                                                   "G001685",
+                                                   "G001688",
+                                                   "G001698",
+                                                   "N000897",
+                                                   "N001300",
+                                                   "N001467",
+                                                   "N001565"
+                                               ]
+                            },
+                            {
+                                "sample_index":  261,
+                                "family_id":  "NM0012",
+                                "member_ids":  [
+                                                   "G000043"
+                                               ]
+                            },
+                            {
+                                "sample_index":  262,
+                                "family_id":  "C0001.G04.F4",
+                                "member_ids":  [
+                                                   "G000064",
+                                                   "G000889",
+                                                   "G001594",
+                                                   "G001901",
+                                                   "V000551"
+                                               ]
+                            },
+                            {
+                                "sample_index":  263,
+                                "family_id":  "C0074.G01.F1",
+                                "member_ids":  [
+                                                   "G000022",
+                                                   "N000467",
+                                                   "V000656"
+                                               ]
+                            },
+                            {
+                                "sample_index":  264,
+                                "family_id":  "C0078.G01.F1",
+                                "member_ids":  [
+                                                   "G001451",
+                                                   "N000451",
+                                                   "N001376"
+                                               ]
+                            },
+                            {
+                                "sample_index":  265,
+                                "family_id":  "0.10.F1",
+                                "member_ids":  [
+                                                   "G000950",
+                                                   "G001603",
+                                                   "G001871",
+                                                   "N000788"
+                                               ]
+                            },
+                            {
+                                "sample_index":  266,
+                                "family_id":  "C0084.G01.F1",
+                                "member_ids":  [
+                                                   "G000384",
+                                                   "V000532"
+                                               ]
+                            },
+                            {
+                                "sample_index":  267,
+                                "family_id":  "C0042.G01.F1",
+                                "member_ids":  [
+                                                   "G000236",
+                                                   "G000400",
+                                                   "G000468",
+                                                   "N000840",
+                                                   "N001164",
+                                                   "V000517",
+                                                   "V000981"
+                                               ]
+                            },
+                            {
+                                "sample_index":  268,
+                                "family_id":  "47.0.F1",
+                                "member_ids":  [
+                                                   "N001236",
+                                                   "N001352"
+                                               ]
+                            },
+                            {
+                                "sample_index":  269,
+                                "family_id":  "C0023.G01.F2",
+                                "member_ids":  [
+                                                   "G000035",
+                                                   "G000824",
+                                                   "N000255"
+                                               ]
+                            },
+                            {
+                                "sample_index":  270,
+                                "family_id":  "12.1.F4",
+                                "member_ids":  [
+                                                   "G000395",
+                                                   "G000436",
+                                                   "G001644",
+                                                   "N000494",
+                                                   "V000823"
+                                               ]
+                            },
+                            {
+                                "sample_index":  271,
+                                "family_id":  "C0029.G01.F1",
+                                "member_ids":  [
+                                                   "G000922",
+                                                   "N000931"
+                                               ]
+                            },
+                            {
+                                "sample_index":  272,
+                                "family_id":  "1.5.F1",
+                                "member_ids":  [
+                                                   "G000288",
+                                                   "V000470",
+                                                   "V000477"
+                                               ]
+                            },
+                            {
+                                "sample_index":  273,
+                                "family_id":  "NM0752",
+                                "member_ids":  [
+                                                   "N000922"
+                                               ]
+                            },
+                            {
+                                "sample_index":  274,
+                                "family_id":  "NM0163",
+                                "member_ids":  [
+                                                   "G000747"
+                                               ]
+                            },
+                            {
+                                "sample_index":  275,
+                                "family_id":  "27.2.F1",
+                                "member_ids":  [
+                                                   "G000724",
+                                                   "G001381",
+                                                   "G001838",
+                                                   "N000411",
+                                                   "N000748"
+                                               ]
+                            },
+                            {
+                                "sample_index":  276,
+                                "family_id":  "NM0204",
+                                "member_ids":  [
+                                                   "G000864"
+                                               ]
+                            },
+                            {
+                                "sample_index":  277,
+                                "family_id":  "21.0.F6",
+                                "member_ids":  [
+                                                   "N000429",
+                                                   "V000881"
+                                               ]
+                            },
+                            {
+                                "sample_index":  278,
+                                "family_id":  "NM1060",
+                                "member_ids":  [
+                                                   "V000431"
+                                               ]
+                            },
+                            {
+                                "sample_index":  279,
+                                "family_id":  "NM0216",
+                                "member_ids":  [
+                                                   "G000931"
+                                               ]
+                            },
+                            {
+                                "sample_index":  280,
+                                "family_id":  "16.0.F2",
+                                "member_ids":  [
+                                                   "G000356",
+                                                   "G000988",
+                                                   "G001087",
+                                                   "G001088",
+                                                   "N000956"
+                                               ]
+                            },
+                            {
+                                "sample_index":  281,
+                                "family_id":  "NM0543",
+                                "member_ids":  [
+                                                   "N000227"
+                                               ]
+                            },
+                            {
+                                "sample_index":  282,
+                                "family_id":  "C0040.G01.F1",
+                                "member_ids":  [
+                                                   "G000731",
+                                                   "G001844",
+                                                   "N000201",
+                                                   "V000906"
+                                               ]
+                            },
+                            {
+                                "sample_index":  283,
+                                "family_id":  "NM0121",
+                                "member_ids":  [
+                                                   "G000525"
+                                               ]
+                            },
+                            {
+                                "sample_index":  284,
+                                "family_id":  "NM0639",
+                                "member_ids":  [
+                                                   "N000541"
+                                               ]
+                            },
+                            {
+                                "sample_index":  285,
+                                "family_id":  "3.0.F3",
+                                "member_ids":  [
+                                                   "G001128",
+                                                   "G001543"
+                                               ]
+                            },
+                            {
+                                "sample_index":  286,
+                                "family_id":  "NM0054",
+                                "member_ids":  [
+                                                   "G000230",
+                                                   "G000567"
+                                               ]
+                            },
+                            {
+                                "sample_index":  287,
+                                "family_id":  "C0044.G01.F1",
+                                "member_ids":  [
+                                                   "G000664",
+                                                   "G001124",
+                                                   "G001886",
+                                                   "N000382",
+                                                   "N000584",
+                                                   "N000725",
+                                                   "N000845",
+                                                   "N000885",
+                                                   "N001210",
+                                                   "N001212",
+                                                   "N001582",
+                                                   "N001661",
+                                                   "N001792",
+                                                   "V000520",
+                                                   "V000662",
+                                                   "V000857"
+                                               ]
+                            },
+                            {
+                                "sample_index":  288,
+                                "family_id":  "NM0723",
+                                "member_ids":  [
+                                                   "N000828",
+                                                   "N000866"
+                                               ]
+                            },
+                            {
+                                "sample_index":  289,
+                                "family_id":  "20.1.F1",
+                                "member_ids":  [
+                                                   "N000245",
+                                                   "N000619",
+                                                   "V000246"
+                                               ]
+                            },
+                            {
+                                "sample_index":  290,
+                                "family_id":  "NM0776",
+                                "member_ids":  [
+                                                   "N001017"
+                                               ]
+                            },
+                            {
+                                "sample_index":  291,
+                                "family_id":  "C0008.G01.F1",
+                                "member_ids":  [
+                                                   "G000248",
+                                                   "G001547",
+                                                   "V000763",
+                                                   "V000985"
+                                               ]
+                            },
+                            {
+                                "sample_index":  292,
+                                "family_id":  "NM0997",
+                                "member_ids":  [
+                                                   "N001780"
+                                               ]
+                            },
+                            {
+                                "sample_index":  293,
+                                "family_id":  "NM0558",
+                                "member_ids":  [
+                                                   "N000299"
+                                               ]
+                            },
+                            {
+                                "sample_index":  294,
+                                "family_id":  "NM0466",
+                                "member_ids":  [
+                                                   "G001925"
+                                               ]
+                            },
+                            {
+                                "sample_index":  295,
+                                "family_id":  "NM0317",
+                                "member_ids":  [
+                                                   "G001370",
+                                                   "N000131",
+                                                   "N000688"
+                                               ]
+                            },
+                            {
+                                "sample_index":  296,
+                                "family_id":  "C0015.G01.F3",
+                                "member_ids":  [
+                                                   "V000764",
+                                                   "V000798"
+                                               ]
+                            },
+                            {
+                                "sample_index":  297,
+                                "family_id":  "NM0258",
+                                "member_ids":  [
+                                                   "G001104"
+                                               ]
+                            },
+                            {
+                                "sample_index":  298,
+                                "family_id":  "22.3.F2",
+                                "member_ids":  [
+                                                   "G000516",
+                                                   "N000848",
+                                                   "N001778",
+                                                   "V000467"
+                                               ]
+                            },
+                            {
+                                "sample_index":  299,
+                                "family_id":  "NM0688",
+                                "member_ids":  [
+                                                   "N000714"
+                                               ]
+                            },
+                            {
+                                "sample_index":  300,
+                                "family_id":  "NM0563",
+                                "member_ids":  [
+                                                   "N000313"
+                                               ]
+                            },
+                            {
+                                "sample_index":  301,
+                                "family_id":  "NM0072",
+                                "member_ids":  [
+                                                   "G000301",
+                                                   "G000869",
+                                                   "N001728",
+                                                   "V000345"
+                                               ]
+                            },
+                            {
+                                "sample_index":  302,
+                                "family_id":  "NM0745",
+                                "member_ids":  [
+                                                   "N000904"
+                                               ]
+                            }
+                        ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "rq_id": "RQ4",
+  "research_question": "How does using retrieved instance-level commonsense instead of generalized commonsense affect GUI bug detection?",
+  "task": "bug_detection_with_instance_level_commonsense",
+  "retrieval_mode": "instance_level",
+  "runner": "rqs/rq4/run.py",
+  "case_count": 151,
+  "evaluation_status": "not_included",
+  "model": {
+    "paper_name": "gemini-3.1-pro-preview",
+    "api_model_identifier": "gemini-3.1-pro-preview-medium"
+  },
+  "baselines": {
+    "visiondroid": {"situation_track": "sequence_context"},
+    "vanilla_mllm": {"situation_track": "image_only"},
+    "kuitest": {"situation_track": "sequence_context", "uses_page_descriptions": true}
+  },
+  "historical_experiment_count": 3,
+  "retrieval": {
+    "candidate_type": "instance_level_commonsense",
+    "source_record_count": 3708,
+    "similarity": "cosine",
+    "cosine_recall_k": 60,
+    "rerank_k": 40,
+    "stored_enriched_k": 30,
+    "detector_injection_k": 10
+  },
+  "comparison": {
+    "generalized_commonsense_results": "rqs/rq2/data/detector_outputs/gemini-3.1-pro-preview",
+    "note": "RQ2 supplies the corresponding generalized-commonsense condition; it is not duplicated in RQ4."
+  },
+  "implementation": [
+    "rqs/rq4/code/common/runtime.py",
+    "rqs/rq4/code/common/instance_level_context.py",
+    "rqs/rq4/code/baselines/visiondroid/run_ablation.py",
+    "rqs/rq4/code/baselines/vanilla_mllm/run_ablation.py",
+    "rqs/rq4/code/baselines/kuitest/run_ablation.py",
+    "commonsense_repro/retrieval/batch_retrieve_instance_level_commonsense.py",
+    "commonsense_repro/retrieval/enrich_retrieved_instance_level_commonsense.py"
+  ],
+  "inputs": {
+    "case_manifest": "rqs/rq2/data/case_manifest.jsonl",
+    "instance_level_commonsense": [
+      "data/checkpoints/instance_level_commonsense/gemini_v1_2_extract.json",
+      "data/checkpoints/instance_level_commonsense/gemini_v1_2_github.json",
+      "data/checkpoints/instance_level_commonsense/gemini_v1_2_negative.json"
+    ],
+    "situation_embeddings": [
+      "data/reference/instance_level_commonsense_situation_embeddings/gemini_v1_2_extract_embeddings.jsonl",
+      "data/reference/instance_level_commonsense_situation_embeddings/gemini_v1_2_github_embeddings.jsonl",
+      "data/reference/instance_level_commonsense_situation_embeddings/gemini_v1_2_negative_embeddings.jsonl"
+    ],
+    "retrieved_situation_tracks": {
+      "sequence_context": "rqs/rq4/data/situations/sequence_context/retrieved",
+      "image_only": "rqs/rq4/data/situations/image_only/retrieved"
+    }
+  },
+  "historical_outputs": "rqs/rq4/data/detector_outputs",
+  "historical_output_manifest": "rqs/rq4/data/detector_output_manifest.json",
+  "new_output_root": "work/rq4/gemini-3.1-pro-preview/<baseline>"
+}
