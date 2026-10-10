@@ -12,6 +12,11 @@ The released reference library contains **1,399 generalized commonsense rules**
 covering **3,708 instance-level commonsense items** extracted from **4,634 bug
 reports** across **868 Android applications**.
 
+Developers can browse the released rules in the [AutoTestSense Knowledge
+Base](https://uu1d.github.io/AutoTestSense-KnowledgeBase/). The website supports
+keyword search and links generalized rules to their supporting instance-level
+rules and original bug reports.
+
 ## What AutoTestSense Does
 
 The paper presents four conceptual phases:
